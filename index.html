@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+</head>
+<body>
+<div class="msg">
+    <span class="msg-content"></span>
+    <span class="anchor confirmed">知道了</span>
+</div>
+<div class="container"><!-- 总容器开始 -->
+    <h1>TodoList</h1>
+    <form class="add-task">
+        <input name="content" 
+        	   type="text" 
+        	   placeholder="e.g. 下午记得买菜" 
+        	   autofocus ="autofocus"
+        	   autocomplete="off">
+        <button type="submit">submit</button>
+    </form>
+    <div class="task-list"></div><!--清单列表结束-->
+    <div class="task-detail-mask"></div>
+    <div class="task-detail"><!-- 任务详情开始 -->
+    </div><!-- 任务详情结束 -->
+</div><!-- 总容器结束 -->
+<video class="alerter" scr="alert.mp3"></video>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/jquery.datetimepicker.full.js"></script>
+<script type="text/javascript" src="./js/store.js"></script>
+<script type="text/javascript" src="./js/base.js"></script>
+</body>
+</html>
